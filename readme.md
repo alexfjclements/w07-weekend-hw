@@ -1,0 +1,1 @@
+This project is a JavaScript based web app written for CodeClan week 7 weekend homework. The initial concept is to display a random sample of exoplanets or a single exoplanet on each refresh, with the data on the planet in an easily understandable format.
