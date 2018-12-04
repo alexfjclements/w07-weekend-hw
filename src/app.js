@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('JavaScript Loaded');
 
   const newPlanet = document.querySelector('#find-new-planet');
-  newPlanet.onClick = getNewPlanet();
+  newPlanet.addEventListener('click', getNewPlanet);
 });
 
 const getNewPlanet = function () {
-  document.querySelector('.main-page-contents').innerHTML = "";
-  exoplanets = new Exoplanet(),
-  exoplanets.getData()
+  // document.querySelector('.main-page-contents').innerHTML = "";
+  const exoplanets = new Exoplanet();
+  exoplanets.getData();
 
   planetContainer = document.querySelector('.main-page-contents');
   planetView = new Result(planetContainer);

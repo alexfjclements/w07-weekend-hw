@@ -13,6 +13,7 @@ ResultView.prototype.bindEvents = function () {
 };
 
 ResultView.prototype.render = function () {
+  this.contentsContainer.innerHTML = '';
   const planets = document.createElement('div');
   planets.setAttribute('class', 'planet-container');
 
